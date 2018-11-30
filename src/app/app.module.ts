@@ -8,10 +8,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ScriptureModalComponent } from './components/scripture-modal/scripture-modal.component';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [AppComponent, ScriptureModalComponent, VideoComponent],
+  entryComponents: [ScriptureModalComponent, VideoComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,

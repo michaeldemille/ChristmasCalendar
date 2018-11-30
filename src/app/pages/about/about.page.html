@@ -1,0 +1,22 @@
+<!--<ion-header>-->
+  <!--<ion-toolbar>-->
+    <!--<ion-buttons slot="start">-->
+      <!--<ion-back-button></ion-back-button>-->
+    <!--</ion-buttons>-->
+    <!--<ion-title>About</ion-title>-->
+  <!--</ion-toolbar>-->
+<!--</ion-header>-->
+
+<ion-content>
+  <div><ion-button fill="clear" size="large" color="cream" (click)="gotoPage()"><ion-icon name="ios-arrow-back"></ion-icon></ion-button></div>
+  <div class="story">
+    <!--<ion-button class="back-button" fill="clear" size="large" color="medium" (click)="gotoPage()"><ion-icon name="ios-arrow-back"></ion-icon></ion-button>-->
+    <h2 *ngIf="day" class="day-header"><span class="day-text">DAY</span>{{day}}</h2>
+    <h4 *ngIf="listen"><b>Listen: </b><span tappable (click)="presentModal('music')" class="light-text link-text">{{listen}}</span></h4>
+    <h4 *ngIf="scripture"><b>Scripture: </b><span tappable (click)="presentModal('scripture')" class="light-text link-text">{{scripture}}</span></h4>
+    <h4 padding-bottom *ngIf="imagine"><b>Imagine: </b><span class="light-text">{{imagine}}</span></h4>
+    <p padding-top *ngIf="title"><b>{{title}}</b></p>
+    <p *ngIf="subtitle">{{subtitle}}</p>
+    <p padding-top *ngIf="story">{{story}}</p>
+  </div>
+</ion-content>

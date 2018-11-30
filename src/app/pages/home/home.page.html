@@ -1,0 +1,19 @@
+<!--<ion-header>-->
+  <!--<ion-toolbar>-->
+    <!--<ion-title>Home</ion-title>-->
+  <!--</ion-toolbar>-->
+<!--</ion-header>-->
+
+<ion-content padding>
+  <!--<div ><ion-button class="playlist-button" fill="clear" size="large" color="medium" (click)="gotoPage()"><span>Playlist</span></ion-button></div>-->
+  <ion-img class="logo-img" src="assets/christmas-calendar-logo.png"></ion-img>
+  <ion-grid class="calendar-grid">
+    <ion-row>
+      <ion-col *ngFor="let card of data" [sizeXs]="6" [sizeSm]="4" [sizeLg]="3">
+        <div class="calendar-card-wrapper" (click)="gotoPage(card)" [ngClass]="{'disabled-button': !isAvailable[card.index]}">
+          <div class="calendar-card"><ion-img [src]="card.img"></ion-img> </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

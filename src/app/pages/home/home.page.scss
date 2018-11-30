@@ -1,0 +1,45 @@
+
+
+.calendar-grid {
+  max-width: 1200px;
+}
+
+.calendar-card-wrapper {
+  //border: 1px solid black;
+  //margin: 12%;
+}
+
+.calendar-card-wrapper::before {
+  content: "";
+  float: left;
+  padding-top: 100%;
+}
+
+.calendar-card-wrapper::after {
+  clear: left;
+  content: " ";
+  display: table;
+}
+
+.calendar-card {
+  padding: 8px;
+  text-align: center;
+}
+
+ion-toolbar {
+  background-color: #fff;
+}
+
+.playlist-button {
+  margin-left: auto;
+}
+
+.logo-img {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disabled-button {
+  opacity: .5;
+}

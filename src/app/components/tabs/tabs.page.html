@@ -1,0 +1,35 @@
+<ion-tabs class="io-tabs">
+
+  <ion-tab class="home-tab" tab="home">
+    <ion-router-outlet name="home"></ion-router-outlet>
+  </ion-tab>
+  <!--<ion-tab tab="play">-->
+    <!--<ion-content name="play"></ion-content>-->
+  <!--</ion-tab>-->
+  <!--<ion-tab tab="contact">-->
+    <!--<ion-router-outlet name="contact"></ion-router-outlet>-->
+  <!--</ion-tab>-->
+
+  <ion-tab-bar class="tab-bar-stuff" slot="bottom">
+
+    <ion-tab-button tab="back" (click)="back()">
+      <ion-icon class="other-buttons" name="skip-backward"></ion-icon>
+      <!--<ion-label>Back</ion-label>-->
+    </ion-tab-button>
+
+    <ion-tab-button class="play-button" tab="play" (click)="play()">
+      <!--<ion-icon [name]="!isPlaying ? 'play' : 'pause'"></ion-icon>-->
+      <ion-img class="play-button-img"[src]="!isPlaying ? 'assets/play.png' : 'assets/pause.png'"></ion-img>
+
+      <!--<ion-label>Play</ion-label>-->
+    </ion-tab-button>
+
+    <ion-tab-button tab="forward" (click)="forward()">
+      <ion-icon class="other-buttons" name="skip-forward"></ion-icon>
+      <!--<ion-label>Forward</ion-label>-->
+    </ion-tab-button>
+    <div id="playlist"><audio></audio></div>
+
+  </ion-tab-bar>
+
+</ion-tabs>
