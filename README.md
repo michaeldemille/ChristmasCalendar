@@ -1,6 +1,6 @@
 # Christmas Calendar
 
-This is a fun project that I did during at the 2018 Southern Utah Code Camp
+This is a fun project that I did during the 2018 [Southern Utah Code Camp](https://southernutahcodecamp.com/)
 to be able to start playing with the new Ionic 4 that was in beta at the
 time. 
 

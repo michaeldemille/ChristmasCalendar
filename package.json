@@ -1,8 +1,8 @@
 {
   "name": "christmasCalendar",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Clean Site Designs",
+  "homepage": "http://cleansitedesigns.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
